@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="dashboard">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Portea</h2>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a class="active" href="appointments.html">Appointments</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+      <li><a href="index.html">Logout</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+
+    <h1>Appointment Requests</h1>
+
+    <table class="appointment-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Service</th>
+          <th>Booking Time</th>
+          <th>Accept Time</th>
+          <th>Close Time</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td>1</td>
+          <td>Ravi Kumar</td>
+          <td>9876543210</td>
+          <td>Home Nursing</td>
+          <td>10:15 AM</td>
+          <td class="accept-time">--</td>
+          <td class="close-time">--</td>
+          <td><span class="status pending">Pending</span></td>
+          <td>
+            <button class="btn approve" onclick="approve(this)">Approve</button>
+            <button class="btn reject" onclick="reject(this)">Reject</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Anjali</td>
+          <td>9123456789</td>
+          <td>Physiotherapy</td>
+          <td>11:00 AM</td>
+          <td class="accept-time">--</td>
+          <td class="close-time">--</td>
+          <td><span class="status pending">Pending</span></td>
+          <td>
+            <button class="btn approve" onclick="approve(this)">Approve</button>
+            <button class="btn reject" onclick="reject(this)">Reject</button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
