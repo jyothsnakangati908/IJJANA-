@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body class="login-body">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="./assets/images/video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
   <div class="login-container">
     <h2>Admin Login</h2>
       <form onsubmit="login(event)">
@@ -15,19 +21,6 @@
     <button type="submit">Login</button>
     </form>
   </div>
-  <script>
-function login(e) {
-  e.preventDefault();
-
-  const email = document.querySelector('input[type="email"]').value;
-  const password = document.querySelector('input[type="password"]').value;
-
-  if(email === "admin@IJJANA.com" && password === "admin123") {
-    window.location.href = "dashboard.html";
-  } else {
-    alert("Invalid login credentials");
-  }
-}
-</script>
+  <script src="main.js"></script>
 </body>
 </html>
